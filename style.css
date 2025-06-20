@@ -1,0 +1,79 @@
+/*
+Theme Name: Doll Collector Theme
+Theme URI: https://icomercial.cl/doll-collector-theme
+Author: Nelson Alvarez
+Author URI: https://icomercial.cl
+Description: Un tema para un sitio de coleccionistas de muñecas, basado en un diseño HTML con Tailwind.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: custom-header, custom-menu, featured-images, responsive-layout, one-column
+Text Domain: dollcollector
+*/
+
+/* No necesitas pegar tus estilos de Tailwind aquí si usas el CDN,
+   pero este archivo es obligatorio para que WordPress reconozca el tema.
+   Puedes añadir estilos personalizados aquí si los necesitas más adelante. */
+/* Aplica solo en móviles */
+.custom-logo {
+  max-height: 64px;
+}
+
+@media (max-width: 1023px) {
+  #main-menu ul {
+    background-color: white;
+    border-top: 1px solid #e5e7eb;
+    width: 100%;
+  }
+
+  #main-menu li.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #181111;
+  }
+
+  #main-menu li.menu-item a {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    text-decoration: none;
+  }
+
+  #main-menu li.menu-item a .menu-icon {
+    margin-right: 0.75rem;
+    min-width: 1.25rem;
+    text-align: center;
+  }
+
+  #main-menu li.menu-item-has-children > a::after {
+    content: "›";
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+  }
+
+  #main-menu li.open > a::after {
+    transform: rotate(90deg);
+  }
+
+  #main-menu .sub-menu {
+    display: none;
+    padding-left: 2rem;
+    background-color: #f9f9f9;
+  }
+
+  #main-menu .menu-item.open > .sub-menu {
+    display: block;
+  }
+}
+
+/* Estilo para los íconos del menú principal */
+.menu-icon {
+  margin-right: 0.75rem;
+  min-width: 1.25rem;
+  text-align: center;
+}
