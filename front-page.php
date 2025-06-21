@@ -1,6 +1,6 @@
 <?php get_header(); // Incluye header.php ?>
 
-<div class="px-40 flex flex-1 justify-center py-5">
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
     <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
         <div class="@container">
             <div class="@[480px]:p-4">
